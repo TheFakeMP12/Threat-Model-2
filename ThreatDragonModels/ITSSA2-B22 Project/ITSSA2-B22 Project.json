@@ -33,8 +33,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "e6b9ad0b-ae04-41bf-9d15-2a21cdf7c5f9",
             "zIndex": -1,
+            "id": "e6b9ad0b-ae04-41bf-9d15-2a21cdf7c5f9",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Web Server Zone",
@@ -64,6 +64,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -147,7 +148,6 @@
               ]
             },
             "id": "ff41b32a-eb0d-4046-bafc-19ecf75b12e9",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Browser",
@@ -455,6 +455,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -538,7 +539,6 @@
               ]
             },
             "id": "b12b7c71-9a56-4c2b-97bf-8e27e5c34964",
-            "zIndex": 12,
             "data": {
               "type": "tm.Process",
               "name": "Auth Service",
@@ -574,6 +574,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -657,7 +658,6 @@
               ]
             },
             "id": "207e7878-b9ef-4906-a7cd-8e2b10cc7b8a",
-            "zIndex": 13,
             "data": {
               "type": "tm.Process",
               "name": "3rd Party Finance Gateway",
@@ -693,6 +693,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -776,7 +777,6 @@
               ]
             },
             "id": "f3ff0b7c-b029-4271-9132-e86686c1c498",
-            "zIndex": 15,
             "data": {
               "type": "tm.Process",
               "name": "Web Server",
@@ -815,6 +815,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -898,7 +899,6 @@
               ]
             },
             "id": "20c5292e-f4c7-4d61-b313-6b1cd8a06f36",
-            "zIndex": 16,
             "data": {
               "type": "tm.Store",
               "name": "Database Server",
@@ -935,6 +935,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -1018,7 +1019,6 @@
               ]
             },
             "id": "75e97cfb-f2cd-48d3-9626-f674ac07bda4",
-            "zIndex": 17,
             "data": {
               "type": "tm.Process",
               "name": "Database Server",
