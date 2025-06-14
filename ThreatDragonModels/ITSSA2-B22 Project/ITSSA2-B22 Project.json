@@ -38,7 +38,7 @@
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Web Server Zone",
-              "description": "",
+              "description": "Within an area separate to the front-end (browser), where all authentication and other operations occur.",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             }
@@ -151,7 +151,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "Browser",
-              "description": "",
+              "description": "Interactor: User/Browser/Mobile App",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -179,8 +179,8 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Request; Login; Transaction; Etc.",
-              "description": "",
+              "name": "Request",
+              "description": " Login; View transaction history; Send Money; Etc.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -191,7 +191,7 @@
               "threats": []
             },
             "labels": [
-              "Request; Login; Transaction; Etc."
+              "Request"
             ],
             "id": "8e3c5b4e-b59d-4460-a032-46c209f8e666",
             "source": {
@@ -225,7 +225,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Validation ",
-              "description": "",
+              "description": "Login Validation for user from browser",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -269,7 +269,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Transactions",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -281,7 +281,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "Transactions"
             ],
             "id": "be8bbea8-bce8-473f-b1d0-aeb80df9aec3",
             "source": {
@@ -428,6 +428,10 @@
               "port": "84c714ad-38b9-4830-bb2d-dcf2163d868f"
             },
             "vertices": [
+              {
+                "x": 360,
+                "y": 450
+              },
               {
                 "x": 310,
                 "y": 450
@@ -661,7 +665,7 @@
             "data": {
               "type": "tm.Process",
               "name": "3rd Party Finance Gateway",
-              "description": "",
+              "description": "Bank API for access services such as payments and receiving them",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -780,13 +784,13 @@
             "data": {
               "type": "tm.Process",
               "name": "Web Server",
-              "description": "",
+              "description": "Frontend Web Server (Application Gateway)",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
-              "isWebApplication": false,
+              "isWebApplication": true,
               "privilegeLevel": "",
               "threats": []
             }
@@ -902,7 +906,7 @@
             "data": {
               "type": "tm.Store",
               "name": "Database Server",
-              "description": "",
+              "description": "Records of transactions are recorded",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
